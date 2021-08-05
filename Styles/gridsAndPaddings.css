@@ -1,0 +1,59 @@
+.content {
+  display: grid;
+  grid-template-columns: 0fr 500px 0fr;
+  grid-template-areas:
+    "sidebar sidebar sidebar"
+    "hello meader meader"
+    "hello meader meader"
+    "header header no"
+    "header header no";
+  border-radius: 6px;
+  border-color: black;
+}
+.header {
+  grid-area: header;
+  background-color: blueviolet;
+  padding: 0fr;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: rosybrown;
+  padding: 0fr;
+}
+.meader {
+  grid-area: meader;
+  background-color: indianred;
+  padding: 0fr;
+}
+.hello {
+  grid-area: hello;
+  background-color: chocolate;
+  padding: 0fr;
+}
+.no {
+  grid-area: no;
+  background-color: chocolate;
+  padding: 1fr;
+}
+div {
+  background-image: linear-gradient(
+    rgba(0, 0, 255, 0.5),
+    rgba(255, 255, 0, 0.5)
+  );
+  background-color: yellow;
+  padding: 60px;
+  /* width: 500px; basically same as the grid template colunms above, but it shows the width of div background colour
+    instead of the width of colunms*/
+  /* padding makes the divs' be spread apart vertically */
+  text-align: center;
+}
+div:nth-of-type(even) {
+  background-image: linear-gradient(
+    rgba(0, 255, 149, 0.5),
+    rgba(255, 255, 0, 0.5)
+  );
+  background-color: red;
+}
+h1 {
+  color: green;
+}

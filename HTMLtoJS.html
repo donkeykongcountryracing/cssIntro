@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    //script is short for javascript
+    function messageRecieved() {
+      document.getElementById("message").innerHTML = "<img src=funy.jpg/>"; //document is referencing body below
+      //you can put h1 around hello boy to make bigger
+    }
+  </script>
+  <body>
+    <div id="message">
+      <!-- id is name of div and the id's name is message(like var in js) -->
+      <button onclick="messageRecieved()">
+        Boy has a message?<img src="download.jpg" />
+      </button>
+      <!-- on click is argument/function, html expects arguments to have quotation mark eg) functions need to have quotation marks -->
+    </div>
+  </body>
+</html>

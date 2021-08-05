@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function buttonReaction() {
+      const story = document.getElementById("userInput").value; //puts the user input to story constant(NOTE: MUST ALWAYS
+      //PUT HTML NAMES/ID'S IN QUOTATION MARKS IN JAVASCRIPT
+      const output = document.createTextNode(story); //used to escape html characters and transform the HTML char. into
+      // a modifiable text node in java
+      const newElement = document.createElement("p"); //makes a format for text(p=paragraph)
+      newElement.appendChild(output); //puts outputted story into paragraphed format
+      document.getElementById("your story").appendChild(newElement); //puts the formatted story into your story(button output)
+      document.getElementById("userInput").value = ""; //clears the textbox
+    }
+  </script>
+  <body>
+    <div>
+      <h1>Write a story!</h1>
+      <textarea id="userInput"> </textarea>
+      <!-- text area is a text box -->
+      <button onclick="buttonReaction()">Print!</button>
+    </div>
+    <div id="your story"></div>
+  </body>
+</html>
