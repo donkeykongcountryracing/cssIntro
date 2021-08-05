@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        padding: 50px;
+        text-align: center;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 150px;
+        background-image: linear-gradient(
+          rgba(0, 0, 255, 0.5),
+          rgba(255, 255, 0, 0.5)
+        );
+        background-color: black;
+      }
+      .on {
+        background-image: linear-gradient(
+          rgba(0, 0, 255, 0.5),
+          rgba(255, 255, 0, 0.5)
+        );
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="on()">ON</button>
+    <button onclick="off()">OFF</button>
+    <div id="target">light</div>
+    <script>
+      function on() {
+        const box = document.getElementById("target");
+        box.classList.add("on");
+      }
+      function off() {
+        const box = document.getElementById("target");
+        box.classList.remove("on");
+      }
+    </script>
+  </body>
+</html>
