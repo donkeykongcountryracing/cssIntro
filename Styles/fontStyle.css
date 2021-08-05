@@ -1,0 +1,10 @@
+.font1 {
+  grid-template-columns: 0fr;
+  font-style: italic;
+  font-family: serif;
+  color: blueviolet;
+  background-color: yellow;
+  border-radius: 1em;
+  border-bottom: 0em;
+  border-color: black;
+}
